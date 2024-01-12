@@ -1,0 +1,17 @@
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\bin\Debug\net6.0\HotelProject.DtoLayer.deps.json
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\bin\Debug\net6.0\HotelProject.DtoLayer.runtimeconfig.json
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\bin\Debug\net6.0\HotelProject.DtoLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\bin\Debug\net6.0\HotelProject.DtoLayer.pdb
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\bin\Debug\net6.0\HotelProject.EntityLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\bin\Debug\net6.0\HotelProject.EntityLayer.pdb
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.csproj.AssemblyReference.cache
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.AssemblyInfoInputs.cache
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.AssemblyInfo.cs
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.csproj.CoreCompileInputs.cache
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.csproj.CopyComplete
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\refint\HotelProject.DtoLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.pdb
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\HotelProject.DtoLayer.genruntimeconfig.cache
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DtoLayer\obj\Debug\net6.0\ref\HotelProject.DtoLayer.dll
