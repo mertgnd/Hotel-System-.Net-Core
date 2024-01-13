@@ -74,3 +74,4 @@ C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.WebApi\obj\Debug\net6.
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.WebApi\obj\Debug\net6.0\HotelProject.WebApi.pdb
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.WebApi\obj\Debug\net6.0\HotelProject.WebApi.genruntimeconfig.cache
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.WebApi\obj\Debug\net6.0\ref\HotelProject.WebApi.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.WebApi\obj\Debug\net6.0\HotelProject.WebApi.sourcelink.json
