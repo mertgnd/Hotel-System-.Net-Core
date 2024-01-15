@@ -58,6 +58,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Service/AddService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxBZGRTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Service/UpdateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxVcGRhdGVTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,8 +78,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Staff/AddStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQWRkU3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Staff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Staff/UpdateStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVXBkYXRlU3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Testimonial/AddTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcQWRkVGVzdGltb25pYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Testimonial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Testimonial/UpdateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcVXBkYXRlVGVzdGltb25pYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/_ViewImports.cshtml]

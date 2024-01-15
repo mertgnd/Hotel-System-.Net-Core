@@ -3,6 +3,7 @@ using HotelProject.BusinessLayer.Concrete;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.EntityFramework;
+using HotelProject.WebApi.Mapping;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,17 @@ builder.Services.AddScoped<IServiceService, ServiceManager>();
 
 builder.Services.AddScoped<ISubscribeDal, EfSubscribeDal>();
 builder.Services.AddScoped<ISubscribeService, SubscribeManager>();
+
+builder.Services.AddAutoMapper(typeof(Program));
+
+// We allowed our api to be consumed.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("HotelApiCors", opts =>
+    {
+        opts.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
 
 builder.Services.AddControllers();
 
@@ -44,6 +56,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Cors added.
+app.UseCors("HotelApiCors");
 
 app.UseAuthorization();
 

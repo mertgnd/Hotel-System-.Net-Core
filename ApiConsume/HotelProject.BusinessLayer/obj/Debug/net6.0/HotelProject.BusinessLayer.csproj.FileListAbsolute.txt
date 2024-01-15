@@ -19,3 +19,4 @@ C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.BusinessLayer\obj\Debu
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net6.0\HotelProject.BusinessLayer.pdb
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net6.0\HotelProject.BusinessLayer.genruntimeconfig.cache
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net6.0\ref\HotelProject.BusinessLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.BusinessLayer\obj\Debug\net6.0\HotelProject.BusinessLayer.sourcelink.json
