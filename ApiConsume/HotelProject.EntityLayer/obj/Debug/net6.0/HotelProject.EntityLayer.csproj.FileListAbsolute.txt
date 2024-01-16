@@ -12,3 +12,4 @@ C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.EntityLayer\obj\Debug\
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.EntityLayer\obj\Debug\net6.0\HotelProject.EntityLayer.pdb
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.EntityLayer\obj\Debug\net6.0\HotelProject.EntityLayer.genruntimeconfig.cache
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.EntityLayer\obj\Debug\net6.0\ref\HotelProject.EntityLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.EntityLayer\obj\Debug\net6.0\HotelProject.EntityLayer.sourcelink.json

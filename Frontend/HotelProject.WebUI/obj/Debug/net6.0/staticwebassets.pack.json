@@ -21657,6 +21657,30 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\wwwroot\\login-page\\bg.jpg",
+      "PackagePath": "staticwebassets\\login-page\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\wwwroot\\login-page\\index.html",
+      "PackagePath": "staticwebassets\\login-page\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\wwwroot\\login-page\\style.css",
+      "PackagePath": "staticwebassets\\login-page\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\wwwroot\\register-page\\bg.jpg",
+      "PackagePath": "staticwebassets\\register-page\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\wwwroot\\register-page\\index.html",
+      "PackagePath": "staticwebassets\\register-page\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\wwwroot\\register-page\\style.css",
+      "PackagePath": "staticwebassets\\register-page\\style.css"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HotelProject.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

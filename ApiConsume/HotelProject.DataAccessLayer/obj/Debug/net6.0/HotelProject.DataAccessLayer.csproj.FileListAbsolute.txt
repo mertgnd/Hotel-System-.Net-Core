@@ -15,3 +15,4 @@ C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DataAccessLayer\obj\De
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DataAccessLayer\obj\Debug\net6.0\HotelProject.DataAccessLayer.pdb
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DataAccessLayer\obj\Debug\net6.0\HotelProject.DataAccessLayer.genruntimeconfig.cache
 C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DataAccessLayer\obj\Debug\net6.0\ref\HotelProject.DataAccessLayer.dll
+C:\Users\mertg\Desktop\My_Project\ApiConsume\HotelProject.DataAccessLayer\obj\Debug\net6.0\HotelProject.DataAccessLayer.sourcelink.json

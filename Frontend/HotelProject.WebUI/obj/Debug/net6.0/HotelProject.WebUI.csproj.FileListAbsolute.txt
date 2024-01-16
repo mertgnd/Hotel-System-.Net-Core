@@ -252,3 +252,10 @@ C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\A
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\HotelProject.EntityLayer.dll
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\HotelProject.EntityLayer.pdb
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\HotelProject.DataAccessLayer.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\HotelProject.DataAccessLayer.pdb
