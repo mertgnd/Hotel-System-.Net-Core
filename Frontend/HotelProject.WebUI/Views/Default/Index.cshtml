@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+    <div class="container-xxxl bg-white p-0">
+        <!--Spinner-->
+        @await Component.InvokeAsync("_SpinnerPartial")
+        <!--Navbar-->
+        @await Component.InvokeAsync("_NavHeaderPartial")
+        <!--Slider-->
+        @await Component.InvokeAsync("_CarouselPartial")
+        <!--Booking-->
+        @await Component.InvokeAsync("_ReservationPartial")
+        <!--About Us Section-->
+        @await Component.InvokeAsync("_AboutPartial")
+        <!--Rooms Section-->
+        @await Component.InvokeAsync("_RoomsPartial")
+        <!--Trailer Video Section-->
+        @await Component.InvokeAsync("_TrailerPartial")
+        <!--Services Section-->
+        @await Component.InvokeAsync("_ServicePartial")
+        <!--Testimonial Section-->
+        @await Component.InvokeAsync("_TestimonialPartial")
+        <!--Testimonial Section-->
+        @await Component.InvokeAsync("_TeamPartial")
+        <!--Subscribe Section-->
+        @await Component.InvokeAsync("_SubscribePartial")
+        <!--Footer Section-->
+        @await Component.InvokeAsync("_FooterPartial")
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <!--Java Scripts-->
+    @await Component.InvokeAsync("_ScriptsPartial")
+</body>
+
+</html>
