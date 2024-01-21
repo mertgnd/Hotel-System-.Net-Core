@@ -12,3 +12,29 @@
 
 <!-- Template Javascript -->
 <script src="~/hotel-html-template/js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Check if the fragment identifier is present in the URL
+        var section = window.location.hash.substring(1);
+        if (section) {
+            // Scroll to the element with the specified id
+            var element = document.getElementById(section);
+            if (element) {
+                // Use jQuery to smoothly scroll to the element
+                $('html, body').animate({
+                    scrollTop: $('#' + section).offset().top
+                }, 1000);
+            }
+        }
+    });
+
+    // Check if there is a success message and scroll to the subscribe section
+    var successMessage = '@TempData["SubscribeSuccessMessage"]';
+    var dangerMessage = '@TempData["SubscribeDangerMessage"]';
+    if (successMessage || dangerMessage) {
+        $('html, body').animate({
+            scrollTop: $('#subscribeSection').offset().top
+        }, 500);
+    }
+</script>

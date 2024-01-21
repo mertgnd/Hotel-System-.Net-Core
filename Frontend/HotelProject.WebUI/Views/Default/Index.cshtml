@@ -31,7 +31,9 @@
         <!--Testimonial Section-->
         @await Component.InvokeAsync("_TeamPartial")
         <!--Subscribe Section-->
-        @await Html.PartialAsync("_SubscribePartial")
+        <div id="subscribeSection">
+            @await Html.PartialAsync("_SubscribePartial")
+        </div>
         <!--Footer Section-->
         @await Component.InvokeAsync("_FooterPartial")
 
