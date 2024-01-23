@@ -3,6 +3,7 @@ using HotelProject.BusinessLayer.Concrete;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.EntityFramework;
+using HotelProject.EntityLayer.Concrete;
 using HotelProject.WebApi.Mapping;
 using Microsoft.EntityFrameworkCore;
 
@@ -44,12 +45,14 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 
 // For track error and We defined our connection string in appsettings.json
-builder.Services.AddDbContext<Context>(options =>
-{
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"));
-    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-});
+//builder.Services.AddDbContext<Context>(options =>
+//{
+//    options.UseSqlServer(
+//        builder.Configuration.GetConnectionString("DefaultConnection"));
+//    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+//}, ServiceLifetime.Scoped);
+
+builder.Services.AddDbContext<Context>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

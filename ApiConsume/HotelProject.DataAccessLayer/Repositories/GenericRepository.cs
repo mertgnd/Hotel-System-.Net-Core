@@ -7,8 +7,8 @@ namespace HotelProject.DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
-        private readonly Context _context;
-        private readonly DbSet<T> DbSet;
+        protected readonly Context _context;
+        protected readonly DbSet<T> DbSet;
 
         public GenericRepository(Context context)
         {

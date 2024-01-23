@@ -93,5 +93,12 @@ namespace HotelProject.WebApi.Controllers
                 return BadRequest($"There is no such a data with id: {id}");
             }
         }
+
+        [HttpGet("BookingAproved")]
+        public async Task<IActionResult> BookingAproved(int id)
+        {
+            await _bookingService.TBookingStatusChangeApproved(id);
+            return Ok();
+        }
     }
 }
