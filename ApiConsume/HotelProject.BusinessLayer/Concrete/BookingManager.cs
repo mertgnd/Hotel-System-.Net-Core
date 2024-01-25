@@ -13,9 +13,24 @@ namespace HotelProject.BusinessLayer.Concrete
             _bookingDal = bookingDal;
         }
 
-        public async Task TBookingStatusChangeApproved(int id)
+        public async Task BookingStatusChangeApproved(int id)
         {
             await _bookingDal.BookingStatusChangeApproved(id);
+        }
+
+        public async Task BookingStatusChangeCancel(int id)
+        {
+            await _bookingDal.BookingStatusChangeCancel(id);
+        }
+
+        public async Task BookingStatusChangeReset(int id)
+        {
+            await _bookingDal.BookingStatusChangeReset(id);
+        }
+
+        public async Task BookingStatusChangeWait(int id)
+        {
+            await _bookingDal.BookingStatusChangeWait(id);
         }
 
         public async Task<Booking> TAdd(Booking entity)

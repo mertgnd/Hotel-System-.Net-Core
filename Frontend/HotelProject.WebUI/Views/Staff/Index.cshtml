@@ -17,7 +17,7 @@
     <tbody>
         @if (Model.Count == 0)
         {
-            <tr>
+            <tr style="font-size:11px !important;">
                 <td colspan="5" class="text-center text-danger">There is no data.</td>
             </tr>
         }
@@ -25,20 +25,20 @@
         {
             @foreach (var item in Model)
             {
-                <tr>
+                <tr style="font-size:11px !important;">
                     <td>@item.StaffID</td>
                     <td>@item.Name</td>
                     <td>@item.Title</td>
                     <td>
-                        <a href="/Staff/DeleteStaff/@item.StaffID" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-rounded btn-outline-danger">Delete</a>
-                        <a href="/Staff/UpdateStaff/@item.StaffID" class="btn btn-rounded btn-outline-secondary">Update</a>
+                        <a style="font-size:11px !important;" href="/Staff/DeleteStaff/@item.StaffID" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-rounded btn-outline-danger">Delete</a>
+                        <a style="font-size:11px !important;" href="/Staff/UpdateStaff/@item.StaffID" class="btn btn-rounded btn-outline-secondary">Update</a>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-rounded btn-outline-dark">Details</a>
+                        <a style="font-size:11px !important;" href="#" class="btn btn-rounded btn-outline-dark">Details</a>
                     </td>
                 </tr>
             }
         }
     </tbody>
 </table>
-<a href="/Staff/AddStaff/" class="btn btn-rounded btn-outline-info">Create New Employee</a>
+<a style="font-size:11px !important;" href="/Staff/AddStaff/" class="btn btn-rounded btn-outline-info">Create New Employee</a>

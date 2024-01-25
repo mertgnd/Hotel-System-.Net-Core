@@ -27,13 +27,43 @@ namespace HotelProject.WebUI.Controllers
             return View();
         }
 
-        public async Task<IActionResult> ApproveBooking(ApproveBookingDto request)
+        public async Task<IActionResult> ApproveBooking(int id)
         {
-            request.Status = "Approved";
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(request);
-            StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("http://localhost:26082/api/Booking", content);
+            var responseMessage = await client.GetAsync($"http://localhost:26082/api/Booking/BookingAproved?id={id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> CancelBooking(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:26082/api/Booking/BookingCanceled?id={id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> HoldOnBooking(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:26082/api/Booking/BookingWait?id={id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> ResetBooking(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:26082/api/Booking/BookingReset?id={id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");

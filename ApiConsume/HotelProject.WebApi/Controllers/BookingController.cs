@@ -97,7 +97,28 @@ namespace HotelProject.WebApi.Controllers
         [HttpGet("BookingAproved")]
         public async Task<IActionResult> BookingAproved(int id)
         {
-            await _bookingService.TBookingStatusChangeApproved(id);
+            await _bookingService.BookingStatusChangeApproved(id);
+            return Ok();
+        }
+
+        [HttpGet("BookingCanceled")]
+        public async Task<IActionResult> BookingCanceled(int id)
+        {
+            await _bookingService.BookingStatusChangeCancel(id);
+            return Ok();
+        }
+
+        [HttpGet("BookingReset")]
+        public async Task<IActionResult> BookingReset(int id)
+        {
+            await _bookingService.BookingStatusChangeReset(id);
+            return Ok();
+        }
+
+        [HttpGet("BookingWait")]
+        public async Task<IActionResult> BookingWait(int id)
+        {
+            await _bookingService.BookingStatusChangeWait(id);
             return Ok();
         }
     }

@@ -259,3 +259,14 @@ C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\M
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\HotelProject.DataAccessLayer.dll
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\HotelProject.DataAccessLayer.pdb
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

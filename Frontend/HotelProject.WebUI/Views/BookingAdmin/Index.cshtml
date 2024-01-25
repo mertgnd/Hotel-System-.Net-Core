@@ -34,12 +34,57 @@
                                 <td style="font-size:11px !important;">@item.Mail</td>
                                 <td style="font-size:11px !important;">@item.CheckIn.ToString("dd MMMM yyyy")</td>
                                 <td style="font-size:11px !important;">@item.CheckOut.ToString("dd MMMM yyyy")</td>
-                                <td style="font-size:12px !important;"><span class="badge badge-primary px-2">@item.Status</span></td>
+                                @if(item.Status == "Approved.")
+                                {
+                                    <td style="font-size:12px !important;"><span class="badge badge-success px-2">@item.Status</span></td>
+                                }
+                                else if (item.Status == "Canceled.")
+                                {
+                                    <td style="font-size:12px !important;"><span class="badge badge-danger px-2">@item.Status</span></td>
+                                }
+                                else if (item.Status == "Waiting for Approval.")
+                                {
+                                    <td style="font-size:12px !important;"><span class="badge badge-info px-2">@item.Status</span></td>
+                                }
+                                else if (item.Status == "Holding.")
+                                {
+                                    <td style="font-size:12px !important;"><span class="badge badge-warning px-2">@item.Status</span></td>
+                                }
+
                                 <td>
-                                    <a style="font-size:10px !important;" href="/BookingAdmin/ApproveBooking/@item.BookingID" onclick="return confirm('Are you sure you want to approve this booking?');" class="btn btn-rounded btn-outline-primary">Approve</a>
-                                    <a style="font-size:10px !important;" href="#" onclick="return confirm('Are you sure you want to hold on this booking?');" class="btn btn-rounded btn-outline-warning">Hold On</a>
-                                    <a style="font-size:10px !important;" href="#" onclick="return confirm('Are you sure you want to cancel this booking?');" class="btn btn-rounded btn-outline-danger">Cancel</a>
-                                    <a style="font-size:10px !important;" href="#" onclick="return confirm('Are you sure you want to update this booking?');" class="btn btn-rounded btn-outline-info">Update</a>
+                                    @if(item.Status == "Approved.")
+                                    {
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/HoldOnBooking/@item.BookingID" onclick="return confirm('Are you sure you want to hold on this booking?');" class="btn btn-rounded btn-outline-warning">Hold On</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/CancelBooking/@item.BookingID" onclick="return confirm('Are you sure you want to cancel this booking?');" class="btn btn-rounded btn-outline-danger">Cancel</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ResetBooking/@item.BookingID" onclick="return confirm('Are you sure you want to reset this booking?');" class="btn btn-rounded btn-outline-info">Reset</a>
+
+                                    }
+                                    else if (item.Status == "Canceled.")
+                                    {
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ApproveBooking/@item.BookingID" onclick="return confirm('Are you sure you want to approve this booking?');" class="btn btn-rounded btn-outline-success">Approve</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/HoldOnBooking/@item.BookingID" onclick="return confirm('Are you sure you want to hold on this booking?');" class="btn btn-rounded btn-outline-warning">Hold On</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ResetBooking/@item.BookingID" onclick="return confirm('Are you sure you want to reset this booking?');" class="btn btn-rounded btn-outline-info">Reset</a>
+                                    }
+                                    else if (item.Status == "Waiting for Approval.")
+                                    {
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ApproveBooking/@item.BookingID" onclick="return confirm('Are you sure you want to approve this booking?');" class="btn btn-rounded btn-outline-success">Approve</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/HoldOnBooking/@item.BookingID" onclick="return confirm('Are you sure you want to hold on this booking?');" class="btn btn-rounded btn-outline-primary">Hold On</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/CancelBooking/@item.BookingID" onclick="return confirm('Are you sure you want to cancel this booking?');" class="btn btn-rounded btn-outline-warning">Cancel</a>
+                                    }
+                                    else if (item.Status == "Holding.")
+                                    {
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ApproveBooking/@item.BookingID" onclick="return confirm('Are you sure you want to approve this booking?');" class="btn btn-rounded btn-outline-success">Approve</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/CancelBooking/@item.BookingID" onclick="return confirm('Are you sure you want to cancel this booking?');" class="btn btn-rounded btn-outline-warning">Cancel</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ResetBooking/@item.BookingID" onclick="return confirm('Are you sure you want to reset this booking?');" class="btn btn-rounded btn-outline-info">Reset</a>
+                                    }
+                                    else
+                                    {
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ApproveBooking/@item.BookingID" onclick="return confirm('Are you sure you want to approve this booking?');" class="btn btn-rounded btn-outline-success">Approve</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/HoldOnBooking/@item.BookingID" onclick="return confirm('Are you sure you want to hold on this booking?');" class="btn btn-rounded btn-outline-warning">Hold On</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/CancelBooking/@item.BookingID" onclick="return confirm('Are you sure you want to cancel this booking?');" class="btn btn-rounded btn-outline-danger">Cancel</a>
+                                        <a style="font-size:10px !important;" href="/BookingAdmin/ResetBooking/@item.BookingID" onclick="return confirm('Are you sure you want to reset this booking?');" class="btn btn-rounded btn-outline-info">Reset</a>
+                                    }
+                                    <a style="font-size:10px !important;" href="#" onclick="return confirm('Are you sure you want to update this booking?');" class="btn btn-rounded btn-outline-primary">Update</a>
                                     <a style="font-size:10px !important;" href="#" class="btn btn-rounded btn-outline-dark">Detail</a>
                                 </td>
                             </tr>   
