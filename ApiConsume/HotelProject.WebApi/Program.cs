@@ -29,6 +29,12 @@ builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<IBookingDal, EfBookingDal>();
 builder.Services.AddScoped<IBookingService, BookingManager>();
 
+builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+
+builder.Services.AddScoped<IContactInfoDal, EfContactInfoDal>();
+builder.Services.AddScoped<IContactInfoService, ContactInfoManager>();
+
 builder.Services.AddAutoMapper(typeof(Program));
 
 // We allowed our api to be consumed.

@@ -30,11 +30,27 @@
     });
 
     // Check if there is a success message and scroll to the subscribe section
-    var successMessage = '@TempData["SubscribeSuccessMessage"]';
-    var dangerMessage = '@TempData["SubscribeDangerMessage"]';
-    if (successMessage || dangerMessage) {
+    var successMessageSubscribe = '@TempData["SubscribeSuccessMessage"]';
+    var dangerMessageSubscribe = '@TempData["SubscribeDangerMessage"]';
+    if (successMessageSubscribe || dangerMessageSubscribe) {
         $('html, body').animate({
             scrollTop: $('#subscribeSection').offset().top
+        }, 500);
+    }
+
+    // Check if our Contact is succesfull.
+    var successMessageContact = '@TempData["ContactSuccessMessage"]';
+    if (successMessageContact) {
+        $('html, body').animate({
+            scrollTop: $('#sendMessage').offset().top
+        }, 500);
+    }
+
+    // Check if our Booking is succesfull.
+    var successMessageBooking = '@TempData["BookingSuccessMessage"]';
+    if (successMessageBooking) {
+        $('html, body').animate({
+            scrollTop: $('#createBooking').offset().top
         }, 500);
     }
 </script>

@@ -1,7 +1,7 @@
 ﻿@model List<ResultRoomDto>
 
 <!-- Room Start -->
-<div class="container-xxl py-5">
+<div class="container-xxl py-5" id="rooms">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
@@ -37,14 +37,14 @@
                                 </div>
                                 <p class="text-body mb-3">@item.Description</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="/Booking/Index/">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="/Booking/Index/">Book Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    delay += 0.2; // Increment delay by 0.2s for the next iteration
+                    delay += 0.2;
                 }
             }
         </div>

@@ -1,0 +1,39 @@
+We prepared a trigger for Abouts RoomCount, CustomerCount and StaffCount.
+
+First Query
+
+Update Abouts set RoomCount=(Select Count(*) from Rooms),
+StaffCount=(Select Count(*) from Staffs),
+CustomerCount=(Select Count(*) from Guests)
+
+Second Query -- In Case we are adding
+
+Create trigger RoomIncrease 
+on Rooms
+After Insert
+As
+Update Abouts Set RoomCount=RoomCount+1
+
+Third Query -- In case we are deleting
+
+Create trigger RoomDecrease 
+on Rooms
+After Delete
+As
+Update Abouts Set RoomCount=RoomCount-1
+
+Fourth -- In case we are deleting
+
+Create trigger StaffDecrease 
+on Staffs
+After Delete
+As
+Update Abouts Set StaffCount=StaffCount-1
+
+Fifth -- In case we are adding
+
+Create trigger StaffIncrease
+on Staffs
+After Insert
+As
+Update Abouts Set StaffCount=StaffCount+1

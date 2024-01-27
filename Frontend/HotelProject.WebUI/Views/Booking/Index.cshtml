@@ -16,14 +16,15 @@
         @await Component.InvokeAsync("_NavHeaderPartial")
        
         @await Component.InvokeAsync("_BookingCoverImgPartial")
-
-        <!--Booking-->
-        @await Component.InvokeAsync("_ReservationPartial")
-
-        @await Html.PartialAsync("/Views/Booking/AddBooking.cshtml")
+        
+        <div id="createBooking">
+            @await Html.PartialAsync("/Views/Booking/AddBooking.cshtml")
+        </div>
 
         <!--Subscribe Section-->
+        <div id="subscribeSection">
         @await Html.PartialAsync("/Views/Default/_SubscribePartial.cshtml")
+        </div>
         <!--Footer Section-->
         @await Component.InvokeAsync("_FooterPartial")
 
