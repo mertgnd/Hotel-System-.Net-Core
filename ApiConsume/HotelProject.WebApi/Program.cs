@@ -35,6 +35,12 @@ builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<IContactInfoDal, EfContactInfoDal>();
 builder.Services.AddScoped<IContactInfoService, ContactInfoManager>();
 
+builder.Services.AddScoped<IGuestDal, EfGuestDal>();
+builder.Services.AddScoped<IGuestService, GuestManager>();
+
+builder.Services.AddScoped<ISendMessageDal, EfSendMessageDal>();
+builder.Services.AddScoped<ISendMessageService, SendMessageManager>();
+
 builder.Services.AddAutoMapper(typeof(Program));
 
 // We allowed our api to be consumed.

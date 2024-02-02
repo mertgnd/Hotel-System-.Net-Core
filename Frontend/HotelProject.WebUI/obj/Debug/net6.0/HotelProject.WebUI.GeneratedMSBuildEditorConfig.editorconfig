@@ -18,6 +18,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/About/UpdateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcVXBkYXRlQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminBooking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Cb29raW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/AddSendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XEFkZFNlbmRNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/MessageDetailsByInbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XE1lc3NhZ2VEZXRhaWxzQnlJbmJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/MessageDetailsBySendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XE1lc3NhZ2VEZXRhaWxzQnlTZW5kQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/SendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XFNlbmRCb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/SidebarAdminContactCategoryPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XFNpZGViYXJBZG1pbkNvbnRhY3RDYXRlZ29yeVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminContact/SidebarAdminContactPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0XFNpZGViYXJBZG1pbkNvbnRhY3RQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminLayout/FooterPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcRm9vdGVyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,8 +90,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcX0FkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/BookingAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0FkbWluXEluZGV4LmNzaHRtbA==
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminRoom/AddRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb29tXEFkZFJvb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminRoom/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb29tXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/AdminRoom/UpdateRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb29tXFVwZGF0ZVJvb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Booking/AddBooking.cshtml]
@@ -76,6 +124,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Default/_SubscribePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxfU3Vic2NyaWJlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Guest/AddGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcQWRkR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Guest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Guest/UpdateGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcVXBkYXRlR3Vlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mertg/Desktop/My_Project/Frontend/HotelProject.WebUI/Views/Home/Index.cshtml]

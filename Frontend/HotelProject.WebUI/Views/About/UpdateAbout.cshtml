@@ -1,0 +1,32 @@
+﻿@model UpdateAboutDto
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="AboutID" />
+    <label>FP Title</label>
+    <input type="text" asp-for="Title1" class="form-control" />
+    <br />
+    <label>SP Title</label>
+    <input type="text" asp-for="Title2" class="form-control" />
+    <br />
+    <label>Content</label>
+    <input type="text" asp-for="Content" class="form-control" />
+    <br />
+    <label>First Image</label>
+    <input type="text" asp-for="Image1" class="form-control" />
+    <br />
+    <label>Second Image</label>
+    <input type="text" asp-for="Image2" class="form-control" />
+    <br />
+    <label>Third Image</label>
+    <input type="text" asp-for="Image3" class="form-control" />
+    <br />
+    <label>Fourth Image</label>
+    <input type="text" asp-for="Image4" class="form-control" />
+    <br />
+    <button class="btn btn-rounded btn-outline-primary">Save Changes</button>
+    <a href="/About/Index/" class="btn btn-rounded btn-outline-secondary">Cancel</a>
+</form>

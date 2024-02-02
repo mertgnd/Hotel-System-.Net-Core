@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "TsSNnMKNkQ+obXLCjaKV8bqPr9ULiH0+YvL18FIjSqGe7q6N9Ft2gxV7X3vXEPSgPLrvLvGqf0mADxlO7gaKuA==",
+  "dgSpecHash": "zrKKsQb4Ldob9ae2z8xzGnbLRZAwkTBQppO09YoI92i5l/pHkjpWk/FcfhjOHF0A2qglkmlhvTzDal2VRypcXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mertg\\Desktop\\My_Project\\Frontend\\HotelProject.WebUI\\HotelProject.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mertg\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mertg\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\mertg\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\mertg\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\mertg\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\mertg\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\mertg\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mertg\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

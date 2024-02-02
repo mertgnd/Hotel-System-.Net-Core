@@ -1,0 +1,32 @@
+﻿@model UpdateRoomDto
+@{
+    ViewData["Title"] = "UpdateRoom";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="RoomID" />
+    <label>Cover Image</label>
+    <input type="text" asp-for="CoverImg" class="form-control" />
+    <br />
+    <label>Room Number</label>
+    <input type="number" class="form-control" asp-for="RoomNumber" min="100" max="800" pattern="[100-800]">
+    <br />
+    <label>Price</label>
+    <input type="number" class="form-control" asp-for="Price" min="0" max="5000" pattern="[0-5000]">
+    <br />
+    <label>Title</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+    <label>Bed Count</label>
+    <input type="number" class="form-control" asp-for="BedCount" min="0" max="5" pattern="[0-5]">
+    <br />
+    <label>Bath Count </label>
+    <input type="number" class="form-control" asp-for="BathCount" min="0" max="3" pattern="[0-3]">
+    <br />
+    <label>Description </label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+    <button class="btn btn-rounded btn-outline-primary">Save Changes</button>
+    <a href="/AdminRoom/Index/" class="btn btn-rounded btn-outline-secondary">Cancel</a>
+</form>

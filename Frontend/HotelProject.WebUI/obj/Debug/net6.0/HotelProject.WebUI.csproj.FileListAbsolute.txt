@@ -270,3 +270,7 @@ C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\M
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\mertg\Desktop\My_Project\Frontend\HotelProject.WebUI\obj\Debug\net6.0\HotelProject.WebUI.MvcApplicationPartsAssemblyInfo.cs

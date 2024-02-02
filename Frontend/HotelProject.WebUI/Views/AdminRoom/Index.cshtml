@@ -1,0 +1,44 @@
+﻿@model List<ResultRoomDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Room Number</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count == 0)
+        {
+            <tr style="font-size:11px !important;">
+                <td colspan="5" class="text-center text-danger">There is no data.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr style="font-size:11px !important;">
+                    <td>@count</td>
+                    <td>@item.RoomNumber</td>
+                    <td>@item.Title</td>
+                    <td>@item.Price</td>
+                    <td>
+                        <a style="font-size:11px !important;" href="/AdminRoom/DeleteRoom/@item.RoomID" onclick="return confirm('Are you sure you want to delete this data?');" class="btn btn-rounded btn-outline-danger">Delete</a>
+                        <a style="font-size:11px !important;" href="/AdminRoom/UpdateRoom/@item.RoomID" class="btn btn-rounded btn-outline-secondary">Update</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a style="font-size:11px !important;" href="/AdminRoom/AddRoom/" class="btn btn-rounded btn-outline-info">Create New Room</a>

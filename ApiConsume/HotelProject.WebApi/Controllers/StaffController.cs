@@ -23,9 +23,9 @@ namespace HotelProject.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddStaff([FromBody] Staff staff)
+        public async Task<IActionResult> AddStaff([FromBody] Staff request)
         {
-            var addedStaff = await _staffService.TAdd(staff);
+            var addedStaff = await _staffService.TAdd(request);
 
             if (addedStaff != null)
             {
@@ -33,7 +33,7 @@ namespace HotelProject.WebApi.Controllers
             }
             else
             {
-                return StatusCode(500, "Failed to add staff");
+                return StatusCode(500, "Failed to add data");
             }
         }
 
@@ -55,13 +55,13 @@ namespace HotelProject.WebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateStaff([FromBody] Staff staff)
+        public async Task<IActionResult> UpdateStaff([FromBody] Staff request)
         {
-            var input = await _staffService.TGetById(staff.StaffID);
+            var input = await _staffService.TGetById(request.StaffID);
 
             if (input != null)
             {
-                var updatedStaff = await _staffService.TUpdate(staff);
+                var updatedStaff = await _staffService.TUpdate(request);
 
                 if (updatedStaff != null)
                 {
@@ -74,7 +74,7 @@ namespace HotelProject.WebApi.Controllers
             }
             else
             {
-                return BadRequest($"There is no such a item with id: {staff.StaffID}");
+                return BadRequest($"There is no such a item with id: {request.StaffID}");
             }
         }
 
