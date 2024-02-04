@@ -1,0 +1,44 @@
+﻿@model List<StaffViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Employee Name</th>
+            <th>Emloyee Title</th>
+            <th>Actions</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count == 0)
+        {
+            <tr style="font-size:11px !important;">
+                <td colspan="5" class="text-center text-danger">There is no data.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <tr style="font-size:11px !important;">
+                    <td>@item.StaffID</td>
+                    <td>@item.Name</td>
+                    <td>@item.Title</td>
+                    <td>
+                        <a style="font-size:11px !important;" href="/AdminStaff/DeleteStaff/@item.StaffID" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-rounded btn-outline-danger">Delete</a>
+                        <a style="font-size:11px !important;" href="/AdminStaff/UpdateStaff/@item.StaffID" class="btn btn-rounded btn-outline-secondary">Update</a>
+                    </td>
+                    <td>
+                        <a style="font-size:11px !important;" href="#" class="btn btn-rounded btn-outline-dark">Details</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a style="font-size:11px !important;" href="/AdminStaff/AddStaff/" class="btn btn-rounded btn-outline-info">Create New Employee</a>

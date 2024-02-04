@@ -1,0 +1,18 @@
+﻿@model AdminMailViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Receiver Mail Address: </label>
+    <input type="email" class="form-control" asp-for="ReceiverMail" />
+    <br />
+    <label>Subject: </label>
+    <input type="text" class="form-control" asp-for="Subject" />
+    <br />
+    <label>Message: </label>
+    <textarea class="form-control h-150px" rows="6" id="comment" asp-for="Message"></textarea>
+    <br />
+    <button class="btn btn-rounded btn-outline-primary">Submit</button>
+</form>
