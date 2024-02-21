@@ -2,6 +2,7 @@
 using HotelProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Policy;
 
 namespace HotelProject.WebApi.Controllers
 {
@@ -92,6 +93,13 @@ namespace HotelProject.WebApi.Controllers
             {
                 return BadRequest($"There is no such a item with id: {id}");
             }
+        }
+
+        [HttpGet("GetSendMessageCount")]
+        public async Task<IActionResult> GetSendMessageCount()
+        {
+            var value = await _sendMessageService.SendMessageCount();
+            return Ok(value);
         }
     }
 }

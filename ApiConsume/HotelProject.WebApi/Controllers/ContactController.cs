@@ -94,5 +94,12 @@ namespace HotelProject.WebApi.Controllers
                 return BadRequest($"There is no such a data with id: {id}");
             }
         }
+
+        [HttpGet("GetContactCount")]
+        public async Task<IActionResult> GetContactCount()
+        {
+            var values = await _contactService.GetContactCount();
+            return Ok(values);
+        }
     }
 }

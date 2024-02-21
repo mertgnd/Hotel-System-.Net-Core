@@ -6,7 +6,29 @@
 
 <div class="email-left-box">
     <a href="/AdminContact/AddSendMessage/" class="btn btn-primary btn-block">Compose</a>
-    @await Html.PartialAsync("SidebarAdminContactPartial")
+    <div class="mail-list mt-4">
+        <a href="/AdminContact/Inbox/" class="list-group-item text-dark border-0 p-r-0">
+            <i class="fa fa-inbox font-18 align-middle mr-2"></i>
+            <b> Inbox</b>
+            <span class="badge badge-primary badge-sm float-right m-t-5">@ViewBag.inboxCount</span>
+        </a>
+
+        <a href="/AdminContact/SendBox/" class="list-group-item text-dark border-0 p-r-0">
+            <i class="fa fa-paper-plane font-18 align-middle mr-2"></i>
+            <b> Sent</b>
+            <span class="badge badge-info badge-sm float-right m-t-5">@ViewBag.sendboxCount</span>
+        </a>
+
+        <a href="#" class="list-group-item border-0 text-dark p-r-0">
+            <i class="fa fa-star-o font-18 align-middle mr-2"></i>
+            <b> Important</b>
+            <span class="badge badge-danger badge-sm float-right m-t-5">45</span>
+        </a>
+
+        <a href="#" class="list-group-item border-0 text-dark p-r-0"><i class="mdi mdi-file-document-box font-18 align-middle mr-2"></i><b> Draft</b></a>
+
+        <a href="#" class="list-group-item border-0 text-dark p-r-0"><i class="fa fa-trash font-18 align-middle mr-2"></i><b>Trash</b></a>
+    </div>
     <h5 class="mt-5 m-b-10">Categories</h5>
     @await Html.PartialAsync("SidebarAdminContactCategoryPartial")
 </div>

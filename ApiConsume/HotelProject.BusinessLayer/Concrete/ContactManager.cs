@@ -14,6 +14,12 @@ namespace HotelProject.BusinessLayer.Concrete
             _contactDal = contactDal;
         }
 
+        public async Task<int> GetContactCount()
+        {
+            var value = await _contactDal.GetContactCount();
+            return value;
+        }
+
         public async Task<Contact> TAdd(Contact entity)
         {
             await _contactDal.AddAsync(entity);

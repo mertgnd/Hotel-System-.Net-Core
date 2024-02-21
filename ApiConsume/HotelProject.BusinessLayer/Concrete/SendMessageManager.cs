@@ -14,6 +14,12 @@ namespace HotelProject.BusinessLayer.Concrete
             _sendMessageDal = sendMessageDal;
         }
 
+        public async Task<int> SendMessageCount()
+        {
+            var value = await _sendMessageDal.SendMessageCount();
+            return value;
+        }
+
         public async Task<SendMessage> TAdd(SendMessage entity)
         {
             await _sendMessageDal.AddAsync(entity);
