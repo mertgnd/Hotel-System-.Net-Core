@@ -1,0 +1,61 @@
+﻿@model List<ResultAppUserListDto>
+@{
+    ViewData["Title"] = "UserList";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<div class="table-responsive">
+    <table class="table table-xs mb-0">
+        <thead>
+            <tr>
+                <th>Users</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Status</th>
+                <th>Cinsiyet</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><img src="@item.ImageURL" class=" rounded-circle mr-3" alt=""> @item.Name @item.Surname</td>
+                        <td>@item.City</td>
+                        <td>
+                            <span>@item.Country</span>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="progress" style="height: 6px">
+                                    <div class="progress-bar bg-success" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        @if (item.Gender == "Male")
+                        {
+                            <td><i class="fa fa-circle-o text-primary  mr-2"></i> Male</td>
+                        }
+                        else if (item.Gender == "Female")
+                        {
+                            <td><i class="fa fa-circle-o text-danger  mr-2"></i> Female</td>
+                        }
+                        else
+                        {
+                            <td><i class="fa fa-circle-o text-dark  mr-2"></i> Other</td>
+                        }
+
+                    </tr>
+                }
+            }
+            else
+            {
+                <p>No users found.</p>
+            }       
+        </tbody>
+    </table>
+</div>
+<br />
+<a href="/Register/Index" class="btn btn-rounded btn-outline-primary">New User</a>

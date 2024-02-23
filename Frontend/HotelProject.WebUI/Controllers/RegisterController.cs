@@ -36,6 +36,10 @@ namespace HotelProject.WebUI.Controllers
                 Surname = request.Surname,
                 Email = request.Mail,
                 UserName = request.Username,
+                City = "Istanbul",
+                ImageURL = "/adminweb/images/avatar/4.jpg",
+                WorkDepartment = string.Empty,
+                WorkLocationID = 1,
             };
 
             var result = await _userManager.CreateAsync(appUser, request.Password);
