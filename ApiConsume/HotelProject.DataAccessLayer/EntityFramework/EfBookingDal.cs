@@ -2,6 +2,7 @@
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.Repositories;
 using HotelProject.EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelProject.DataAccessLayer.EntityFramework
 {
@@ -10,6 +11,12 @@ namespace HotelProject.DataAccessLayer.EntityFramework
 
         public EfBookingDal(Context context) : base(context)
         { 
+        }
+
+        public async Task<int> BookingCount()
+        {
+            var value = await _context.Bookings.CountAsync();
+            return value;
         }
 
         public async Task BookingStatusChangeApproved(int id)
@@ -70,6 +77,12 @@ namespace HotelProject.DataAccessLayer.EntityFramework
             {
                 throw new Exception();
             }
+        }
+
+        public async Task<List<Booking>> Last6Bookings()
+        {
+            var value = await _context.Bookings.OrderByDescending(x => x.BookingID).Take(6).ToListAsync();
+            return value;
         }
     }
 }

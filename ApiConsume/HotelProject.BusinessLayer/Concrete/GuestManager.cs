@@ -13,6 +13,11 @@ namespace HotelProject.BusinessLayer.Concrete
             _guestDal = guestDal;
         }
 
+        public async Task<int> GuestCount()
+        {
+            return await _guestDal.GuestCount();
+        }
+
         public async Task<Guest> TAdd(Guest entity)
         {
             await _guestDal.AddAsync(entity);

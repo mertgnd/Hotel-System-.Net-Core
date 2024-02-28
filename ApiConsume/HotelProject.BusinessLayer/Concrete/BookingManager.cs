@@ -13,6 +13,11 @@ namespace HotelProject.BusinessLayer.Concrete
             _bookingDal = bookingDal;
         }
 
+        public async Task<int> BookingCount()
+        {
+            return await _bookingDal.BookingCount();
+        }
+
         public async Task BookingStatusChangeApproved(int id)
         {
             await _bookingDal.BookingStatusChangeApproved(id);
@@ -31,6 +36,11 @@ namespace HotelProject.BusinessLayer.Concrete
         public async Task BookingStatusChangeWait(int id)
         {
             await _bookingDal.BookingStatusChangeWait(id);
+        }
+
+        public async Task<List<Booking>> Last6Bookings()
+        {
+            return await _bookingDal.Last6Bookings();
         }
 
         public async Task<Booking> TAdd(Booking entity)

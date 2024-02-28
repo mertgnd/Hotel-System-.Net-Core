@@ -1,0 +1,29 @@
+﻿@model List<HotelProject.EntityLayer.Concrete.AppRole>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    var count = 0;
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Role</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.Name</td>
+            <td>
+                <a href="/Role/DeleteRole/@item.Id" class="btn btn-rounded btn-outline-danger">Delete</a>
+                <a href="/Role/UpdateRole/@item.Id" class="btn btn-rounded btn-outline-success">Update</a>
+            </td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Role/AddRole/" class="btn btn-rounded btn-outline-primary">Add New Role</a>

@@ -55,7 +55,7 @@ namespace HotelProject.WebApi.Controllers
             return Ok($"{id} data has been deleted successfully.");
         }
 
-        [HttpPut]
+        [HttpPut("UpdateBooking")]
         public async Task<IActionResult> UpdateBooking([FromBody] Booking request)
         {
             var input = await _bookingService.TGetById(request.BookingID);
@@ -120,6 +120,13 @@ namespace HotelProject.WebApi.Controllers
         {
             await _bookingService.BookingStatusChangeWait(id);
             return Ok();
+        }
+
+        [HttpGet("Last6Bookings")]
+        public async Task<IActionResult> Last6Bookings()
+        {
+            var values = await _bookingService.Last6Bookings();
+            return Ok(values);
         }
     }
 }

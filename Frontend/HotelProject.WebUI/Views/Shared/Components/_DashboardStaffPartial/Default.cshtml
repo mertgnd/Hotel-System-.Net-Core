@@ -1,0 +1,21 @@
+﻿@model List<ResultStaffDto>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        @if (item.Title == "Manager")
+        {
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img style ="height: 150px !important; width: 150px !important;" src="@item.ImageURL" class="rounded-circle" alt="">
+                            <h5 class="mt-3 mb-1">@item.Name</h5>
+                            <p class="m-0">@item.Title</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

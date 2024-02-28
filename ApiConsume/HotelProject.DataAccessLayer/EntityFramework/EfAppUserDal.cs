@@ -13,7 +13,18 @@ namespace HotelProject.DataAccessLayer.EntityFramework
         {
         }
 
+        public async Task<int> AppUserCount()
+        {
+            return await _context.Users.CountAsync();
+        }
+
         public async Task<List<AppUser>> UserListWithWorkLocation()
+        {
+            var values = await _context.Users.Include(x => x.WorkLocation).ToListAsync();
+            return values;
+        }
+
+        public async Task<List<AppUser>> UsersListWithWorkLocation()
         {
             var values = await _context.Users.Include(x => x.WorkLocation).ToListAsync();
             return values;

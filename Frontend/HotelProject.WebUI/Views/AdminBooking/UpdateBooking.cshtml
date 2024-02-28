@@ -1,0 +1,42 @@
+﻿@model UpdateBookingDto
+
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="BookingID" />
+    <label>Name - Surname</label>
+    <input type="text" asp-for="Name" class="form-control" />
+    <br />
+    <label>Mail</label>
+    <input type="email" asp-for="Mail" class="form-control" />
+    <br />
+    <label>Checkin</label>
+    <input type="date" asp-for="CheckIn" class="form-control" />
+    <br />
+    <label>Checkout</label>
+    <input type="date" asp-for="CheckOut" class="form-control" />
+    <br />
+    <label>Adult Count</label>
+    <input type="number" class="form-control" asp-for="AdultCount" placeholder="Number of Adult" min="0" max="3" pattern="[0-3]">
+    <br />
+    <label>Child Count</label>
+    <input type="number" class="form-control" asp-for="ChildCount" placeholder="Number of Adult" min="0" max="3" pattern="[0-3]">
+    <br />
+    <label>Room Count</label>
+    <input type="number" class="form-control" asp-for="RoomCount" placeholder="Number of Adult" min="0" max="3" pattern="[0-3]">
+    <br />
+    <label>Status</label>
+    <input type="text" asp-for="Status" class="form-control" readonly/>
+    <br />
+    <label>Special Requests</label>
+    <textarea class="form-control" rows="5" asp-for="SpecialRequest"></textarea>
+    <br />
+    <label>Description</label>
+    <textarea class="form-control" rows="5" asp-for="Description"></textarea>
+    <br />
+    <button class="btn btn-rounded btn-outline-primary">Save Changes</button>
+    <a href="/AdminBooking/Index/" class="btn btn-rounded btn-outline-secondary">Cancel</a>
+</form>

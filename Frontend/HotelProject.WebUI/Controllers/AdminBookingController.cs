@@ -27,6 +27,35 @@ namespace HotelProject.WebUI.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> UpdateBooking(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:26082/api/Booking/{id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<UpdateBookingDto>(jsonData);
+                return View(values);
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateBooking(UpdateBookingDto updateBookingDto)
+        {
+
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(updateBookingDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PutAsync("http://localhost:26082/api/Booking/UpdateBooking/", stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "AdminBooking");
+            }
+            return View();
+        }
+
         public async Task<IActionResult> ApproveBooking(int id)
         {
             var client = _httpClientFactory.CreateClient();

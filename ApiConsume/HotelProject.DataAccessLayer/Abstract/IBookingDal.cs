@@ -8,5 +8,7 @@ namespace HotelProject.DataAccessLayer.Abstract
         Task BookingStatusChangeWait(int id);
         Task BookingStatusChangeReset(int id);
         Task BookingStatusChangeCancel(int id);
+        Task<int> BookingCount();
+        Task<List<Booking>> Last6Bookings();
     }
 }

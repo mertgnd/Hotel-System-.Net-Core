@@ -13,6 +13,12 @@ namespace HotelProject.BusinessLayer.Concrete
             _appUserDal = appUserDal;
         }
 
+        public async Task<int> AppUserCount()
+        {
+            var value = await _appUserDal.AppUserCount();
+            return value;
+        }
+
         public async Task<AppUser> TAdd(AppUser entity)
         {
             await _appUserDal.AddAsync(entity);
@@ -40,9 +46,14 @@ namespace HotelProject.BusinessLayer.Concrete
             return entity;
         }
 
-        public Task<List<AppUser>> UserListWithWorkLocation()
+        public async Task<List<AppUser>> UserListWithWorkLocation()
         {
-            return _appUserDal.UserListWithWorkLocation();
+            return await _appUserDal.UserListWithWorkLocation();
+        }
+
+        public async Task<List<AppUser>> UsersListWithWorkLocation()
+        {
+            return await _appUserDal.UsersListWithWorkLocation();
         }
     }
 }

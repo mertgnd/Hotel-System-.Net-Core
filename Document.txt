@@ -37,3 +37,8 @@ on Staffs
 After Insert
 As
 Update Abouts Set StaffCount=StaffCount+1
+
+
+Şifre değişiklikleri için kurallar koyulacak.
+Resim yüklemeleri eklenecek.
+Logout eklenecek.

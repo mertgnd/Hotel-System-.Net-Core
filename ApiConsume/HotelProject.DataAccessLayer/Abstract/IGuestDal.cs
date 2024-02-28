@@ -4,5 +4,6 @@ namespace HotelProject.DataAccessLayer.Abstract
 {
     public interface IGuestDal : IGenericDal<Guest>
     {
+        Task<int> GuestCount();
     }
 }

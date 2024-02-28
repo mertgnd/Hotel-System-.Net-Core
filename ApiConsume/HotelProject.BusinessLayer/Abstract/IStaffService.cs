@@ -4,5 +4,6 @@ namespace HotelProject.BusinessLayer.Abstract
 {
     public interface IStaffService : IGenericService<Staff>
     {
+        Task<int> GetStaffCount();
     }
 }

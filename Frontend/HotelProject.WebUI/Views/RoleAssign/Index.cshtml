@@ -1,0 +1,33 @@
+﻿@model List<HotelProject.EntityLayer.Concrete.AppUser>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="table-responsive">
+    <table class="table table-xs mb-0">
+        <thead>
+            <tr>
+                <th>Users</th>
+                <th>Assign Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><img src="@item.ImageURL" class=" rounded-circle mr-3" alt=""> @item.Name @item.Surname</td>
+                        <td><a href="/RoleAssign/AssignRole/@item.Id" class="btn btn-rounded btn-outline-success">Assign Role</a></td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <p>No users found.</p>
+            }
+        </tbody>
+    </table>
+</div>

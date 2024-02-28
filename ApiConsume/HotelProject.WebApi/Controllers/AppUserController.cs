@@ -15,17 +15,17 @@ namespace HotelProject.WebApi.Controllers
             _appUserService = appUserService;
         }
 
-        //[HttpGet("GetUserListWithWorkLocation")]
-        //public async Task<IActionResult> UserListWithWorkLocation()
-        //{
-        //    var values = await _appUserService.UserListWithWorkLocation();
-        //    return Ok(values);
-        //}
-
-        [HttpGet]
+        [HttpGet("AppUserList")]
         public async Task<IActionResult> AppUserList()
         {
             var values = await _appUserService.TGetAllAsync();
+            return Ok(values);
+        }
+
+        [HttpGet("UsersListWithWorkLocation")]
+        public async Task<IActionResult> Index()
+        {
+            var values = await _appUserService.UsersListWithWorkLocation();
             return Ok(values);
         }
     }

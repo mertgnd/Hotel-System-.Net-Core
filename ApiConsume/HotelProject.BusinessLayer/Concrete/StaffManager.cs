@@ -14,6 +14,11 @@ namespace HotelProject.BusinessLayer.Concrete
             _staffDal = staffDal;
         }
 
+        public async Task<int> GetStaffCount()
+        {
+            return await _staffDal.GetStaffCount(); 
+        }
+
         public async Task<Staff> TAdd(Staff entity)
         {
             await _staffDal.AddAsync(entity);
